@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+	<title> BMI cal</title>
+	<!--https://www.w3schools.com/cssref/pr_border-collapse.asp 
+	https://www.w3schools.com/icons/fontawesome5_icons_food.asp-->
+</head>
+<body style="background-image: url('https://image.shutterstock.com/image-vector/creative-vector-illustration-bmi-body-600w-1223035348.jpg'); background-attachment: fixed;background-repeat: no-repeat;background-size:100% 100%;">
+	<marquee width="100%" direction="right" height="10px" style="color:red">
+  This site is created by Harshit Kashyap.<br>
+  He is almost a 4 &#11088;star coder at codechef.
+</marquee>
+   <marquee behavior="scroll" direction="right" scrollamount="12"></marquee>
+<h1>Data collection </h1> <p></p> <hr> <h2>People</h2><p>Delhi</p> <hr>
+	<h1 style="color:red;">BMI Calculater</h1>
+ <pre style="border-style: solid;border-color: black;border-width:5px 5px 5px 5px;font-family:arial;font-style: italic;"><strong>
+ 	Calculate Your Body Mass Index<hr>
+Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
+Enter your weight and height using standard or metric measures.
+Select "Compute BMI" and your BMI will appear below.</strong>
+         <form action="file:///E:/Harshit/Web%20Development/BMI%20Cal.html?pl=&rl=" id="numform">
+         <label for="pl" style="font-weight: bold;"> Enter your height (in m)</label><br>
+         <input type="text" id="pl" name="pl">
+         <label for="rl" style="font-weight: bold;"> Enter your weight(in kgs)</label><br>
+         <input type="text" id="rl" name="rl">
+         <input type="button" onClick="Cal()"value="Calculate BMI">
+     </form>
+     <p>Visit our advertisers:</p>
+     <aside>
+	  <div style="width:830px ; background-color:transparent; height:500px; overflow-x:hidden;overflow-y:auto;">
+		<div style="width: 1000px; height: 390px;background-color:transparent">
+			<img src="https://i.ytimg.com/vi/WFCLHVW3xwo/maxresdefault.jpg" width="700" height="350" alt="bbc news special" />
+			<img src="https://i.ytimg.com/vi/WFCLHVW3xwo/maxresdefault.jpg" width="700" height="350" alt="bbc news special" />
+			<img src="https://im1.dineout.co.in/images/uploads/restaurant/sharpen/5/h/n/m5513-15604284905d023fcab4d88.jpg?tr=tr:n-xlarge" width="700" height="350" alt="bbc news special" />
+			<img src="https://bsmedia.business-standard.com/_media/bs/img/article/2018-10/14/full/1539528775-894.jpg" width="700" height="350" alt="bbc news special" />
+			<img src="https://www.chefkraft.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/k/e/keto_5_v.jpg" width="700" height="350" alt="bbc news special" />
+		</div>
+	</div>
+</aside>
+     <p style="border-style:solid;border-radius: 15px;border-collapse:separate;border-spacing: 40px;"> Your BMI:<br>
+     <output form="numform" id="result"></output> 
+     </p>
+   </pre>
+   <script>
+   	var a;
+   	var b;
+   	var c;
+   	function Cal(){
+        a = document.getElementById("pl").value;
+        b= document.getElementById("rl").value;
+        c= (b)/(a*a);
+        c=c.toFixed(1);
+        document.getElementById("result").innerHTML = c;
+   	}
+   </script>
+   <br>
+   <code>
+   	if(BMI<18.5){
+   	   &#128552;
+   	   You need to increase your weight...
+       Change your diet plan;
+       Refer this:
+       <iframe width="492" height="360" src="https://www.youtube.com/embed/iUpUGrGZ5-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   }<br>
+   else if(BMI>=18.5&&BMI<=24.9)
+   {
+        You are perfectly alright&#128516;.Keep it up; 
+        Eat whatever u want.. &#129379;&#129380;
+   }<br>
+   else if(BMI<=30&&BMI>=24.9)
+   {
+        You need to look after u a little bit more.
+        You are over weight.&#128560;
+        Avoid Oily food ..&#xf7ec;
+        Bad for Health and makes u look fat .
+     }<br>
+    else
+    {
+        You are in danger zone...
+        You are more prone to diseases than others..&#128561;
+        You need to lose weight
+        Refer this immediately :
+        <a href="https://www.youtube.com/watch?v=ep9j7YaTfMg">Diet Chart</a>
+ }
+</code>
+   <br>
+   <p>Download the BMI calculator app from playstore now.<br>
+   </p>
+   <a href="https://play.google.com/store/apps/details?id=com.splendapps.bmicalc" target="_blank">BMI cal</a>
+   <hr style="color:transparent:">
+   <address style="color:green;font-style: italic;">
+   	Created By: Harshit Kashyap<br>
+   	Email id: kharshit0101@gmail.com;
+   	Be Safe Stay Healthy;
+   </address>
+  
+
+</body>
+</html>
